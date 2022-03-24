@@ -54,7 +54,7 @@ pipeline {
         stage('Deploying to EKS') {
            steps {
                script {
-                   sh "kubectl apply -f deployment.yml"
+                   sh "./deploy.sh"
                }
            }
         }
